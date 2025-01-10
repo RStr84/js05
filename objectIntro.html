@@ -1,10 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
+<html>
 <body>
+<h1>JavaScript Classes</h1>
+<p>Creating two car objects from a car class:</p>
+
+<p id="demo"></p>
+
+<script>
+    class Car {
+        constructor(name, year) {
+            this.name = name;
+            this.year = year;
+            this.color = 'rot';
+        }
+    }
+
+    const myCar1 = new Car("Ford", 2014);
+    const myCar2 = new Car("Audi", 2019);
+
+    // Überschreiben von year
+    myCar1.year = 2024;
+
+    document.querySelector("#demo").innerHTML =
+        myCar1.name + " von " + myCar1.year + '.'
+        + myCar2.name +  " von " + myCar2.year;
+
+    console.log(myCar1.name + " von " + myCar1.year + '.\n' + myCar2.name +  " von " + myCar2.year +".");
+
+    // Alternativ mit Backticks (übersichtlicher)
+    console.log(`${myCar1.name} von ${myCar1.year} und ist ${myCar1.color}.\n${myCar2.name} von ${myCar2.year}.`);
+
+</script>
 
 </body>
 </html>
