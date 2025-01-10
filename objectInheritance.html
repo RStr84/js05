@@ -21,8 +21,13 @@
     class Model extends Car {
         constructor(brand, mod) {
             // "super" zum Ansprechen der Elternklasse (aufrufen)
+            // "super" muss verwendet werden, da der Constructor es verlangt (extends)
             super(brand);
             this.model = mod;
+
+            // zum Manipulieren der Vererbung
+            // super.carname = 'xxxx';
+            // this.carname = 'yyyy';
         }
         show() {
             return this.present() + ', it is a ' + this.model;

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="nummer1">n1</div>
+<p>xx</p>
+<p>yy</p>
+<div class="klasse1">a</div>
+<div class="klasse1">b</div>
+<div class="klasse2">c</div>
+
+<script>
+
+    // Zugriff auf DOM-Elemente (Objekte)
+    // MIT ID; Klassenname und tag-name
+    // Aufgabe; schreibe in alles 6 Elemente 'XXXXX' rein
+
+    document.querySelector("#nummer1").innerHTML = "XXXXX";
+
+    document.querySelectorAll("p").forEach(p => p.innerHTML = "XXXXX");
+    // Alterntive
+    // document.querySelectorAll("p")[0].innerHTML = "XXXXX";
+    // document.querySelectorAll("p")[1].innerHTML = "XXXXX";
+
+    document.querySelectorAll("div.klasse1").forEach(div => div.innerHTML = "XXXXX");
+    // Alternative
+    // document.querySelectorAll("div.klasse1")[0].innerHTML = "XXXXX";
+    // document.querySelectorAll("div.klasse1")[1].innerHTML = "XXXXX";
+
+    document.querySelectorAll("div.klasse2").forEach(div => div.innerHTML = "XXXXX");
+    // Alternative
+    // document.querySelectorAll("div.klasse2")[0].innerHTML = "XXXXX";
+
+
+    // Alternative Inna
+    // document.querySelectorAll('p').forEach(function(element) {
+    //     element.innerHTML = 'XXXXX';
+    // });
+    //
+    // document.querySelectorAll('div').forEach(function(element) {
+    //     element.innerHTML = 'XXXXX';
+    // });
+
+    // Alternative Daniel
+    // const pTags = document.querySelectorAll('p');
+    // const nummer1 = document.querySelector('#nummer1');
+    // const klasse1 = document.querySelectorAll('.klasse1');
+    // const klasse2 = document.querySelectorAll('.klasse2');
+    //
+    // const allElements = [...pTags, nummer1, ...klasse1, ...klasse2];
+    //
+    // allElements.forEach(element => element.innerHTML = 'XXXXX');
+
+</script>
+
+</body>
+</html>
